@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Inconsolata;
+  src: url("../conference-ticket-generator-main/assets/fonts/static/Inconsolata-Regular.ttf");
+}
+@font-face {
+  font-family: Inconsolatabold;
+  src: url("../conference-ticket-generator-main/assets/fonts/static/Inconsolata-Bold.ttf");
+}
+@font-face {
+  font-family: Inconsolatamedium;
+  src: url("../conference-ticket-generator-main/assets/fonts/static/Inconsolata-Medium.ttf");
+}
+@font-face {
+  font-family: InconsolataExtrabold;
+  src: url("../conference-ticket-generator-main/assets/fonts/static/Inconsolata-ExtraBold.ttf");
+}
+@font-face {
+  font-family: InconsolataVar;
+  src: url("../conference-ticket-generator-main/assets/fonts/static/Inconsolata-ExtraBold.ttf");
+}
+:root {
+  --font: Inconsolata;
+  --font-medium: Inconsolatamedium;
+  --font-bold: Inconsolatabold;
+  --font-extra: InconsolataExtrabold;
+  --font-var: InconsolataVar;
+  --color-primary-0: hsl(0, 0%, 100%);
+  --color-primary-300: hsl(252, 6%, 83%);
+  --color-primary-500: hsl(245, 15%, 58%);
+  --color-primary-700: hsl(245, 19%, 35%);
+  --color-primary-900: hsl(248, 70%, 10%);
+  --color-icon: hsl(7, 88%, 67%);
+  --color-button: hsl(7, 71%, 60%);
+  --textgradient: hsl(7, 86%, 67%) to hsl(0, 0%, 100%);
+}
+
+html {
+  /* font-family: var(--font); */
+  height: 100%;
+}
+body {
+  /* padding: 40px; */
+  color: var(--color-primary-300);
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -200;
+
+  .desktop,
+  .tablet {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+  }
+}
+
+.bg-images {
+  width: 100%;
+  height: 100%;
+  /* background-color: var(--color-primary-700); */
+  position: absolute;
+  z-index: -100;
+
+  .lines {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150%;
+  }
+  .squigy-top {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    width: 100px;
+  }
+  .squigy-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 60%;
+    left: 0;
+  }
+  .circle {
+    position: fixed;
+    top: -50px;
+    width: 150px;
+    left: -50px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 2rem;
+  /* font-family: var(--font-extra); */
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+
+    .logomobile img {
+      width: 150px;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      width: fit-content;
+      /* margin: 0 auto; */
+      /* background: var(--color-primary-700); */
+      font-family: var(--font-var);
+    }
+
+    p {
+      /* margin: 0 auto; */
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      width: fit-content;
+    }
+  }
+
+  form ,.upload{
+    display: flex;
+    flex-direction: column;
+
+    .upload-image{
+    background: var(--color-primary-900);
+    /* filter: opacity(0.4); */
+    }
+
+  }
+}

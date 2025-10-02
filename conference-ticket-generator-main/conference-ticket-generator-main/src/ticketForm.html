@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Form</title>
+    <link rel="stylesheet" href="ticketForm.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <img
+        src="/conference-ticket-generator-main/assets/images/background-desktop.png"
+        alt="bg-desktop"
+        loading="lazy"
+        class="desktop"
+      />
+      <img
+        src="/conference-ticket-generator-main/assets/images/background-mobile.png"
+        alt="bg-mobile"
+        loading="lazy"
+        class="mobile"
+      /><img
+        src="/conference-ticket-generator-main/assets/images/background-tablet.png"
+        alt="bg-tablet"
+        loading="lazy"
+        class="tablet"
+      />
+    </div>
+    <div class="bg-images">
+      <img
+        src="/conference-ticket-generator-main/assets/images/pattern-circle.svg"
+        alt="bg-patterm"
+        loading="lazy"
+        class="circle"
+      />
+      <img
+        src="/conference-ticket-generator-main/assets/images/pattern-lines.svg"
+        alt="bg-patterm"
+        loading="lazy"
+        class="lines"
+      />
+      <img
+        src="/conference-ticket-generator-main/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"
+        alt="bg-patterm"
+        loading="lazy"
+        class="squigy-bottom"
+      />
+      <img
+        src="/conference-ticket-generator-main/assets/images/pattern-squiggly-line-top.svg"
+        alt="bg-patterm"
+        loading="lazy"
+        class="squigy-top"
+      />
+    </div>
+    <div class="container">
+      <section class="hero">
+        <div class="logomobile" contenteditable="true">
+          <img
+            src="/conference-ticket-generator-main/assets/images/logo-full.svg"
+            alt=" 
+           logo"
+            loading="lazy"
+          />
+        </div>
+        <h1>
+          Your Journey to Coding <br />
+          Conf 2025 Starts Here!
+        </h1>
+        <p>
+          Secure your spot at next year's <br />
+          biggest coding conference.
+        </p>
+      </section>
+      <form action="get" method="post">
+        <p>Upload Avatar</p>
+        <div class="upload">
+          <div class="upload-image">
+            <img
+              src="/conference-ticket-generator-main/assets/images/icon-upload.svg"
+              alt=""
+              loading="lazy"
+            />
+            <p class="drag">Drag and drop or click to upload</p>
+          </div>
+
+          <small
+            ><img
+              src="/conference-ticket-generator-main/assets/images/icon-info.svg"
+              alt="info"
+              loading="lazy"
+            />
+            Upload your photo (JPG or PNG, max size: 500KB).</small
+          >
+        </div>
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname" />
+        <label for="email">Email Address</label>
+        <input type="email" name="mail" id="email" />
+        <label for="username">GitHub Username</label>
+        <input type="text" name="user" id="username" />
+        <div class="generate">
+          <input type="submit" value="Generate My Ticket" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
